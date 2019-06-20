@@ -1,36 +1,51 @@
 package com.revature.reverse;
 
+import java.util.Scanner;
+
 	public class ReverseString {
 	
-		static String str, revs;
-		static char[] revc;
+		static String str;
 		static int n;
-		static char char1;
 		static int i=0;
 		static boolean paltest;
 		static int test=0;
 		static int ntest=0;
+		static int choice;
 
+		static Scanner sc = new Scanner(System.in);
+		
 			public static void main(String[] args) {
 				
-			System.out.println("Reverse Program");
-		
-				reverse("MANIPULATIONS");
-				System.out.println(" ");
+				System.out.println("Please provide your word");
+					str = sc.nextLine();
+			
+				System.out.print("Please choose \n: 1- Reverse: \n 2- Palindrom: \n");
 				
-			System.out.println("---------------------------------------");
-			System.out.println("Palindrome Program");
-				
-				palindrum("matam");
-
+					choice = sc.nextInt();
+			
+				if (choice == 1) {
+					
+							reverse(str);
+				}
+				else if (choice == 2) {
+					
+							palindrum(str);
+				}
+				else
+					System.out.println("Unvalid entry");
 			}
-
+				
+				
 	
 	public static void reverse(String str) {
 		
+		//assigning n to the length of the string to iterate from 0 to n
+
 		n = str.length()-1;
 		
 			for(i = 0; i< n+1; i++) {
+				
+				// from every iteration we print out, remaining at the same line, the n-i character
 				
 				System.out.print(str.charAt(n-i));
 				 	
@@ -39,14 +54,10 @@ package com.revature.reverse;
 
 	
 		public static void palindrum(String str) {
-		
 			n = str.length();
 			int t = (n-1)/2;
-			
 				if(n % 2 == 0) {
-					
 					for(i = 0; i<n/2; i++) {
-						
 						if (str.charAt(i) == str.charAt(n-i-1)) {
 								paltest = true;	
 								test+=1;
@@ -55,7 +66,6 @@ package com.revature.reverse;
 							paltest = false;
 							ntest+=1;
 						}
-					
 						
 					if (test == n/2) {
 					System.out.print(str+ " is a palindrum");
@@ -63,7 +73,6 @@ package com.revature.reverse;
 					else {
 						System.out.print(str+ " is not a palindrum");
 					}
-					
 				}
 					else if(n % 2 != 0) {
 						
