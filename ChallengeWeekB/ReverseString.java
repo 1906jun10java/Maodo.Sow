@@ -2,8 +2,7 @@ package com.revature.reverse;
 
 	public class ReverseString {
 	
-		static String str;
-		static String revs;
+		static String str, revs;
 		static char[] revc;
 		static int n;
 		static char char1;
@@ -13,9 +12,16 @@ package com.revature.reverse;
 		static int ntest=0;
 
 			public static void main(String[] args) {
+				
+			System.out.println("Reverse Program");
 		
-				//reverse("MANIPULATIONS");
-				palindrum("ATTA");
+				reverse("MANIPULATIONS");
+				System.out.println(" ");
+				
+			System.out.println("---------------------------------------");
+			System.out.println("Palindrome Program");
+				
+				palindrum("matam");
 
 			}
 
@@ -39,15 +45,15 @@ package com.revature.reverse;
 			
 				if(n % 2 == 0) {
 					
-					for(i = 0; i< n; i++) {
+					for(i = 0; i<n/2; i++) {
 						
 						if (str.charAt(i) == str.charAt(n-i-1)) {
 								paltest = true;	
-								test++;
+								test+=1;
 						}
 						else 
 							paltest = false;
-							test = test;
+							ntest+=1;
 						}
 					
 						
@@ -61,17 +67,17 @@ package com.revature.reverse;
 				}
 					else if(n % 2 != 0) {
 						
-					for(i = 0; i< n-1; i++) {
-						if (str.charAt(i) == str.charAt(n-i-2) && i!=t) {
+					for(i = 0; i< t; i++) {
+						if (str.charAt(i) == str.charAt(n-i-1)) {
 							paltest = true;
-							test++;
+							test+=1;
 						}
 						else {
 							paltest = false;
-							test = test;
+							ntest+=1;
 						}
 					}
-							if (test == (n-1)/2 ) {
+							if (test == t ) {
 								System.out.print(str+ " is a palindrum");
 							}
 					
