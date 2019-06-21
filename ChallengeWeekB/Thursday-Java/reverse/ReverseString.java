@@ -20,14 +20,11 @@ import java.util.Scanner;
 					str = sc.nextLine();
 			
 				System.out.print("Please choose \n: 1- Reverse: \n 2- Palindrom: \n");
-				
-					choice = sc.nextInt();
-			
-				if (choice == 1) {
-					
+					choice = sc.nextInt();	
+						if (choice == 1) {
 							reverse(str);
-				}
-				else if (choice == 2) {
+						}
+						else if (choice == 2) {
 					
 							palindrum(str);
 				}
