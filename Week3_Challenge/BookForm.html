@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Week3 Challenge</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+        <h1>MS __ Bookshelf</h1>
+        </fieldset>
+
+        <p>
+            <fieldset>
+            <label for="user">Username</label> :
+            <input type="text" name="user" id="user" required>
+            <span id="user1"></span>
+        </p>
+        <p>
+            <label for="pw">password</label> :
+            <input type="password" name="pw" id="pw" required>
+            <span id="pw1"></span>
+        </fieldset>
+        </p>
+        <p>
+            <label for="couverpage">Book</label> :
+            <input type="text" name="book" id="book" required placeholder="A-Z 0-9">
+            <span id="b1"></span>
+        </p>
+        <p>
+            <input type="checkbox" name="confirmation" id="confirmation">
+            <label for="confirmation">Receive info on new book</label>
+        </p>
+       
+        <p>
+            <label for="book">View Books :</label>
+            <select name="book" id="book">
+                <option value="b0" selected> </option>
+                <option value="b1">The Belly of Atlantic</option>
+                <option value="b2">The Wolf</option>
+                <option value="b3">Aventure Ambigu</option>
+                <option value="b4">Learn JavaScript</option>
+            </select>
+        </p>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Delete">
+    </form>
+
+    <script src="Bookshelf.js"></script>
+</body>
+
+</html>

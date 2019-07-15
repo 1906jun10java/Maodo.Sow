@@ -1,0 +1,31 @@
+
+
+body {
+
+    margin:0;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-color: hsl(201, 75%, 84%); 
+}
+
+
+header {
+    border-bottom: 3px ridge grey;
+    background: #9ab590;
+
+}
+
+article {
+
+    background: #ebeff1;
+    border-left: 3px  ridge grey;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+aside {
+    background: #e3e2e7;
+    border-left: 3px  ridge rgb(245, 237, 237);
+    box-sizing: border-box;
+    padding: 5px;
+}
+
