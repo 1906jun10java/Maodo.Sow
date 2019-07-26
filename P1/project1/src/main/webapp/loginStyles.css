@@ -1,0 +1,42 @@
+@charset "ISO-8859-1";
+body{
+	 margin:10;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-color: hsl(201, 50%, 92%);
+}
+.display {
+	background-color: #bee2eb;
+	text-align: center;
+	padding: 3rem;
+	margin: 4rem;
+}
+form {
+	margin: 0 auto;
+	width: 680px;
+	text-align: left;
+}
+
+div{
+	text-align: left;
+}
+button{
+    column-rule-width: 6cm;
+	box-sizing: border-box;
+	width: 3cm;
+	align-self: left;
+	background-color: #1590d0;
+    color: white;
+    margin: 8px 0;
+}
+.first{
+	text-align: center;
+}
+
+input{
+	block-size: 5cm;
+	width: 7cm;
+	height: 1cm;
+	background-color: #f5eff2;
+	text-align: left
+
+}

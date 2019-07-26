@@ -1,0 +1,340 @@
+body {
+	margin:0;
+	color: #484950;
+	background-color: hsl(201, 50%, 92%);
+	}
+
+.topnav {
+  overflow: hidden;
+  /* background-color: #a2d7fa; */
+    background-color: #51addf;
+  position: fixed;
+ top:  0;
+width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #eff5f8;
+  background-color: #1282be;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 8px 2px;
+  border-color: white;
+}
+
+
+.topnav a:hover {
+    opacity: 0.8;
+    background-color: #d8e8f0;
+    color: #000;
+}
+
+.topnav a.active {
+    background-color: #58aad6;
+    color: white;
+}
+
+
+
+body
+{
+/*background-image: url("1234.jpg");*/
+  min-height: 200px;
+    /* Set background image to fixed (don't scroll along with the page) */
+   background-attachment: fixed;
+    /* Center the background image */
+    background-position: 10px -50px;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #1590d0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.form_container {
+	display: block;
+    margin: 0 auto;
+	padding: 16px;
+	width: 30%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+.pbody {
+	color: red;
+}
+
+/*
+div.ex4
+{
+    padding: 2500px;
+}
+*/
+
+#uploader {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 50%;
+	margin-bottom: 10px;
+}
+p{
+	color: black;
+}
+
+.main_container {
+	align-items: flex-start;
+	width: auto;
+	font-size: 18px;
+	margin: 3% 10% 7%;   /* top right bottom left TROUBLE*/
+	padding: 5% 5% 5% 5%;
+	/* background-color: beige; */
+}
+
+.square_container {
+	padding: 1px 1px 2px 1px;
+	text-align:center;
+}
+
+.square_container img {
+    display: block;
+    margin: 0 auto;
+	padding: 3% 3% 3%;
+	background-color: #f2f2f2;
+	opacity: 0.8;
+	z-index: 900;
+}
+
+.square_container img:hover {
+	opacity: 0.3;
+}
+
+.square_container_text {
+	font-weight:bold;
+	padding: 1px 1px 3px 1px;
+}
+
+
+.title1 {
+	font-size: 22px;
+	font-weight: bold;
+	padding: 2% 0 0 0;
+}
+
+.title2 {
+	font-size: 26px;
+	font-weight: bold;
+	padding: 0 0 0 8%;
+	text-decoration:underline;
+	text-align:center;
+}
+
+
+.desc {
+	display: inline;
+}
+
+.userGreeting {
+	position:absolute;
+   top:10%;
+   right:11%;
+   color: #eff5f8;
+}
+
+.index_image {
+	background-image: url("../images/phone_1600.jpeg");
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+	z-index: 900;
+
+}
+
+/* .index_image img { */
+	/* width: 100%; */
+	/* z-index: 900; */
+/* } */
+
+.index_big_text {
+	font-size: 42px;
+	color: #eff5f8;
+	z-index: 950;
+	padding: 3% 1% 1% 1%;   /* top right bottom left TROUBLE*/
+}
+
+.index_smaller_text  {
+	font-size: 20px;
+	color: black;
+
+	padding: 1% 1% 1% 1%;   /* top right bottom left TROUBLE*/
+
+}
+
+.wel{
+    text-align: center;
+}
+
+.container-user-info {
+
+
+	margin:auto;
+align-items: flex-start;
+/*text-shadow: 1px 1px 1px blue;
+	width:30%;*/
+
+}
+
+
+.footer_container{
+
+    text-align: center;
+    list-style-position: inside;
+
+}
+.table{
+    border :1px solid;
+		
+}
+fieldset{
+align-items: left;
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: auto;
+    margin: auto;
+    max-width: 600px;
+    padding: 2px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: float 5s infinite;
+}
+.button{
+	background-color: blue;
+    column-rule-width: 6cm;
+    color: rgb(15, 17, 17);
+
+	box-sizing: border-box;
+	letter-spacing: 0.06cm;
+	line-height: 0.6cm;
+	width: 3cm;
+	text-decoration-style: solid;
+	align-self: center;
+
+}
