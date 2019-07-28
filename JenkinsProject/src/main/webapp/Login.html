@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>Login</title>
+<link rel="stylesheet" type="text/css"  href="loginStyles.css">
+</head>
+
+<body>
+	<form action="login" method="POST" autocomplete="off">
+		<div class="display">
+			<fieldset aria-setsize="90">
+				<h2>MS_Employee Reimbursement App</h2>
+			</fieldset>
+			<fieldset>
+				<div>
+					<h4>
+						<b>Username:</b>
+					</h4>
+					 	<input required type="text" name="username" id="username" placeholder="youremail@admin.com" required> 
+					 	<span id="username"></span>
+				</div>
+
+				<div>
+					<h4>
+						<b>Password:</b>
+					</h4>
+					<input type="password" name="pw" id="pw" required>
+					
+					<span id="pw"></span>
+
+				</div>
+				<br>
+				<div>
+					<b><button type="submit" value="submit">
+							<h2>Sign In</h2>
+						</button></b>
+				</div>
+			</fieldset>
+		</div>
+
+	</form>
+</body>
+<script  src="global.js"></script>
+</html>

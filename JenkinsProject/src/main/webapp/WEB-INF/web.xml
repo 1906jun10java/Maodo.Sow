@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>project1</display-name>
+  <servlet>
+    <description></description>
+    <display-name>ResolveReimbursement</display-name>
+    <servlet-name>ResolveReimbursement</servlet-name>
+    <servlet-class>com.revature.servlets.ResolveReimbursement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResolveReimbursement</servlet-name>
+    <url-pattern>/ResolveReimbursement</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewReimbursementByManager</display-name>
+    <servlet-name>ViewReimbursementByManager</servlet-name>
+    <servlet-class>com.revature.servlets.ViewReimbursementByManager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewReimbursementByManager</servlet-name>
+    <url-pattern>/ViewReimbursementByManager</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewAllResolvedReimbursement</display-name>
+    <servlet-name>ViewAllResolvedReimbursement</servlet-name>
+    <servlet-class>com.revature.servlets.ViewAllResolvedReimbursement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewAllResolvedReimbursement</servlet-name>
+    <url-pattern>/ViewAllResolvedReimbursement</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewMyReimbursement</display-name>
+    <servlet-name>ViewMyReimbursement</servlet-name>
+    <servlet-class>com.revature.servlets.ViewMyReimbursement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewMyReimbursement</servlet-name>
+    <url-pattern>/ViewMyReimbursement</url-pattern>
+  </servlet-mapping>
+</web-app>

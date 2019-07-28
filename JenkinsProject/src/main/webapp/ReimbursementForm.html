@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>Reimbursement form</title>
+
+<link rel="stylesheet" type="text/css" href="Styles.css">
+</head>
+
+<body>
+	<div class="topnav">
+		<a href="WelcomeEmployee.html">Home</a> <a href="Login.html">Log
+			Out</a>
+	</div>
+	<div class="display">
+		<div class="page-wrapper bg-dark p-t-50 p-b-30">
+			<div class="wrapper wrapper--w900">
+					<form action="createreimbursement" method="POST">
+				<fieldset>
+					<div class="card-heading">
+						<h1 class="title">Reimbursement form</h1>
+					</div>
+				</fieldset>
+				<br>
+
+					<fieldset>
+						<div class="dropdown">
+							<h4>Reimbursement Type</h4>
+							<select class="btn-lg" class="ui dropdown" name="type"
+								form="TypeForm">
+								<option value="" selected disabled>Expense Type</option>
+								<option value="1">Relocation</option>
+								<option value="2">Travel</option>
+								<option value="3">Food</option>
+								<option value="4">Certification</option>
+								<option value="5">Other</option>
+							</select> <br /> <br />
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<div class="form-row">
+							<h4>Reimbursement Amount</h4>
+							<input class="input--style-8" type="number"
+								name="Reimboursement_Amount">
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<div class="form-row">
+							<h4>Reimbursement Date</h4>
+							<input class="input--style-8" type="date"
+								name="Reimboursement_Date" placeholder="YYYY/MM/DD">
+						</div>
+					</fieldset>
+
+
+					<fieldset>
+
+						<div class="form-row">
+
+							<h4>Upload your receipt, Max file size 50 MB</h4>
+						</div>
+						<div class="value">
+							<div class="input-group js-input-file">
+								<input class="input-file" type="file" name="file_cv" id="file">
+								<label class="label--file" for="file">Choose file</label> 
+								<span class="input-file__info">No file chosen</span>
+							</div>
+						</div>
+					</fieldset>
+					<br>
+					<div class="card-footer">
+						<button id="Rid" type="submit">
+							<h3>Submit Reimbursement</h3>
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+<script src="global.js"></script>
+
+</html>

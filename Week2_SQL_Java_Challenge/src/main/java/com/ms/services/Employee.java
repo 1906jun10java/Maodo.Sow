@@ -1,79 +1,88 @@
 package com.ms.services;
 
-public class Employee {
+public class Employee{
 	
-	int employeeID;
-	String firstname;
-	String lastname;
-	int depID;
-	int salary;
-	String emp_email;
-	
-	public Employee() {
-		super();
-		this.employeeID = employeeID;
-		this.firstname = firstname;
-		this.lastname = lastname;
-		this.depID = depID;
-		this.salary = salary;
-		this.emp_email = emp_email;
-	}
+			private int emp_id;
+			private String firstname;
+			private String lastname;
+			private int dep_id;
+			private double salary;
+			private String email;
+			
+			
+			public Employee(int emp_id, String firstname, String lastname, int dep_id, double salary, String email) {
+				super();
+				this.emp_id = emp_id;
+				this.firstname = firstname;
+				this.lastname = lastname;
+				this.dep_id = dep_id;
+				this.salary = salary;
+				this.email = email;
+			}
 
-	public int getEmployeeID() {
-		return employeeID;
-	}
 
-	public void setEmployeeID(int employeeID) {
-		this.employeeID = employeeID;
-	}
+			public Employee() {
+				// TODO Auto-generated constructor stub
+			}
 
-	public String getFirstname() {
-		return firstname;
-	}
+			public int getEmp_id() {
+				return emp_id;
+			}
+			public void setEmp_id(int emp_id) {
+				this.emp_id = emp_id;
+			}
 
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
-	}
 
-	public String getLastname() {
-		return lastname;
-	}
+			public String getFirstname() {
+				return firstname;
+			}
+			public void setFirstname(String firstname) {
+				this.firstname = firstname;
+			}
 
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
 
-	public int getDepID() {
-		return depID;
-	}
+			public String getLastname() {
+				return lastname;
+			}
+			public void setLastname(String lastname) {
+				this.lastname = lastname;
+			}
 
-	public void setDepID(int depID) {
-		this.depID = depID;
-	}
 
-	public int getSalary() {
-		return salary;
-	}
+			public int getDep_id() {
+				return dep_id;
+			}
 
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
+			public void setDep_id(int dep_id) {
+				this.dep_id = dep_id;
+			}
 
-	public String getEmp_email() {
-		return emp_email;
-	}
 
-	public void setEmp_email(String emp_email) {
-		this.emp_email = emp_email;
-	}
+			public double getSalary() {
+				return salary;
+			}
 
-	@Override
-	public String toString() {
-		return "Employee [employeeID=" + employeeID + ", firstname=" + firstname + ", lastname=" + lastname + ", depID="
-				+ depID + ", salary=" + salary + ", emp_email=" + emp_email + "]";
-	}
-	
-	
-	
+			public void setSalary(double salary) {
+				this.salary = salary;
+			}
 
+
+			public String getEmail() {
+				return email;
+			}
+
+			public void setEmail(String email) {
+				this.email = email;
+			}
+
+
+			@Override
+			public String toString() {
+				return "Employee [emp_id=" + emp_id + ", firstname=" + firstname + ", lastname=" + lastname
+						+ ", dep_id=" + dep_id + ", salary=" + salary + ", email=" + email + "]";
+			}
+			
+			
+			
+			
 }
